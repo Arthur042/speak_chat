@@ -1,0 +1,249 @@
+/* pour centrer le chat DEV */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* pour centrer le chat DEV */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(212, 212, 212);
+    border-radius: 4px;
+    height: 832px;
+}
+
+.salon {
+    width: 200px;
+    height: 100%;
+}
+
+.salon--title {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+}
+
+.sallon__search {
+    background-color: rgb(245, 245, 245);
+    margin-left: .4rem;
+    margin-right: .4rem;
+    margin-bottom: 2px;
+    padding: .4rem;
+    border-radius: 4px;
+    position: relative;
+}
+
+.sallon__search--label {
+    display: none;
+}
+
+.sallon__search--input {
+    border: none;
+    background-color: transparent;
+}
+.sallon__search--input:focus-visible {
+    outline: none;
+}
+
+.sallon__search--svg {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 17px;
+    stroke-width: 2px;
+    stroke: rgb(212, 212, 212);
+}
+
+.salon__list {
+    list-style: none;
+    padding: 0;
+    height: 725px;
+    margin-bottom: 0;
+    overflow-y: scroll;
+}
+
+.salon__list::-webkit-scrollbar, .chat__list--container::-webkit-scrollbar {
+    width: 17px;
+}
+
+.salon__list::-webkit-scrollbar-track, .chat__list--container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.salon__list::-webkit-scrollbar-thumb, .chat__list--container::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+    background-color: #a7a7a7;
+}
+
+.salon__list::-webkit-scrollbar-thumb:hover, .chat__list--container::-webkit-scrollbar-thumb:hover {
+    background-color: #8d8d8d;
+}
+
+.salon__list--item {
+    margin-left: .4rem;
+    margin-right: .4rem;
+    margin-bottom: 2px;
+    padding: .4rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.salon__list--item:hover, .salon__list--item.active {
+    background-color: rgb(245, 245, 245);
+}
+
+.salon__list a {
+    color: black;
+    text-decoration: none;
+}
+
+.chat__message {
+    width: 500px;
+    height: 800px;
+    padding: 1rem .3rem 1rem 1rem;
+    position: relative;
+    background-color: rgb(245, 245, 245);
+}
+
+.chat__list {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.chat__list--container {
+    height: 677px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    margin-top: 35px;
+}
+
+.chat__list--title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.chat__list--message {
+    padding: .4rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.chat__list--message:last-child {
+    margin-bottom: 0;
+}
+
+.chat__list--message p {
+    margin: 0;
+}
+
+.chat__list--message-date {
+    font-weight: 600;
+}
+
+.chat__message--write {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.chat__message--label {
+    display: none;
+}
+
+.chat__message--textarea {
+    resize: none;
+    overflow: hidden;
+    min-height: 30px;
+    max-height: 100px;
+    height: 36px;
+    margin-right: .3rem;
+    padding: .7rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 0 0 4px rgba(112, 112, 112, 0.438);
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+.chat__message--textarea:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 4px rgba(112, 112, 112, 0.438);
+}
+
+.chat__message--send {
+    margin-left: .3rem;
+    padding: .65rem 1rem;
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(112, 112, 112, 0.438);
+}
+
+.chat__message--send:hover {
+    box-shadow: 0 0 4px rgb(54, 54, 54);
+}
+
+.map__div--button {
+    height: 50px;
+    display: flex;
+}
+
+.map__button {
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    transition: ease-in-out .15s;
+    font-weight: 600;
+}
+
+.map__button:hover, .map__button.active {
+    box-shadow: inset 0 0 7px rgb(212, 212, 212);;
+}
+
+.map__button:first-child {
+    border-right: 1px solid rgb(212, 212, 212);
+    border-left: 1px solid rgb(212, 212, 212);
+}
+
+.map__element { 
+    height: 782px; 
+    width: 500px;
+}
+
+
+
+
+/*  ----------------------------------------------------------------------------------------  */
+/* barre de nav juste pour la connexion (non obligatoire) */
+.nav {
+    width: 100%;
+}
+
+.nav button {
+    padding: 1rem 2rem;
+}
+.nav a {
+    color: black;
+    text-decoration: none;
+}
